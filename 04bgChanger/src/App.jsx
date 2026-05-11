@@ -3,18 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import Card from './components/Card' 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [color, setColor] = useState("olive")
 
   return (
-    <>
-      <h1 className ="bg-green-400" > Tailwind Test </h1>
-      <Card />
-      <Card />            
-    </>
-  )
+    <div className=" w-full h-screen duration-200"
+    style={{backgroundColor: color}}
+    ></div>
+
+  ) 
 }
 
 export default App
